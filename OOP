@@ -1,0 +1,21 @@
+WHy we Need OOP?
+--> Because Early Programming Languauges Like C follow Step by Step Procedure For Programming.
+--> That is calles Procedural Language.
+--> It is Good for Simple Applications.
+--> It is hard for Complex Applications.
+
+
+Concepts of OOPs(6 pillars of OOPs)
+--> CLass and Objects
+--> Methods
+--> INheritance 
+--> Polymorphism
+--> Abstraction
+--> Encapsulation
+
+--> CLass and Objects:- 
+        CLass                                                           ||                   Object
+--> Class is Blueprint/Template.                                           --> Object is INstance of Class.
+--> Class is Not A Real World Entity. like animals, class means lambo is   --> Object is A Real World Entity. like dog, cat which we can see in the real world.
+real world entity.              
+--> Class do not occupy Memory.                                            --> Object Occupy Memory.
