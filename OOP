@@ -8,7 +8,7 @@ WHy we Need OOP?
 Concepts of OOPs(6 pillars of OOPs)
 --> CLass and Objects
 --> Methods
---> INheritance 
+--> Ihheritance 
 --> Polymorphism
 --> Abstraction
 --> Encapsulation
@@ -19,3 +19,15 @@ Concepts of OOPs(6 pillars of OOPs)
 --> Class is Not A Real World Entity. like animals, class means lambo is   --> Object is A Real World Entity. like dog, cat which we can see in the real world.
 real world entity.              
 --> Class do not occupy Memory.                                            --> Object Occupy Memory.
+
+
+--> CLass has Attributes and Behaviour. Based on Class, Object has Same Atttributes and Behaviour.
+For exmpale:- Car class have Attributes: Model, Color, Price and Behaviours like Run(), Accelerate().
+
+Synatx for class --> [access modifier]-[class]-[nameOfTheCLass]
+{
+//fields, properties, methods
+}
+  
+
+
