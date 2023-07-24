@@ -1,0 +1,89 @@
+--> LINQ stands for Language Integrated Query.
+--> using System.Linq; namespace is used for LINQ
+--> LINQ in C# is used to work with data access from data sources such as objects, data sets, SQL Server,and XMl etc.
+                    
+--> C# Application<---------------LINQ-->execute query        DATA SOURCE
+                       objects          <-- Get Results
+
+--> LINQ is a data quering API with SQL like query syntaxes.
+--> Syntax 
+1) int [] age = {12,23,4,45,23,32,1,212,12,34,3,45,67,99};
+        var data = from i in age where i > 10  select i;
+        foreach(int item in data)
+        {
+        Console.WriteLine(item);
+        }
+2) for ascending and descending order (by default ascending)
+int [] age = {12,23,4,45,23,32,1,212,12,34,3,45,67,99};
+        var data = from i in age where i > 10 orderby descending i select i;
+        foreach(int item in data)
+        {
+        Console.WriteLine(item);
+        }
+3) for finding string name conatinaing letter a 
+ string [] names = {"pawan","randy","ortan","underataker"};
+
+        var data = from i in names where i.Contains("a")  select i;
+        foreach(string item in data)
+        {
+        Console.WriteLine(item);
+        }
+
+
+
+
+
+--> LINQ TO SQL in C        #
+--> If we want to work with LINQ TO SQL, first we have to convert or map all the relational objects of database into object oriented types.
+--> This process is called ORM(Object Relational Mapping)
+--> To perform ORM we have to use a tool called OR Designer.
+
+Relational Types  ||  Object Oriented Types
+--> Table         --> Class
+--> Column        --> Property
+-->Row            --> Object/INstance
+-->Stored Procedure --> Method
+
+
+-->3 steps to implement LINQ TO SQL 
+1) perform ORM by adding OR Designer
+2) add refrence i.e System.Data.Linq
+3) write connection string into the config file
+
+
+
+Working of LINQ
+Application --> LINQ Queries --> LINQ Providers --> Data sources
+here we write Linq queries in C# and LINQ providers provides interface for different database like for SQL it provide SQl queries , in mYSQL it provide MYSQL queries.
+
+
+LINQ Providers
+1.LINQ-To-Objects
+-->It provides us the ability to write and execute query against in-memory objects e.g. arrays, collections and gererics.
+2.LINQ-To-SQL 
+--> This is designed to work only with MS SQL Server. This is much like an ORM that allows one-to-one / one-to-many mapping between SQL objects and .NET classes
+3.LINQ -TO-Datasets 
+-->It allows users to query cached data in a dataset.
+4.LINQ-To-Entities
+-->It looks like LINQ-TO-SQL. It means , it is also an ORM.It allows one-to-one, one-to-many mapping between database objects and .NET classes.
+--> It work with other database as well like Oracle, Mysql, DB2 etc
+5. LINQ-TO-XML
+-->It is designed to work with XML documents. It allows user to perform differnet operations on XMMM data 
+--> System.Xml.Linq is the namespace we need to use LINQ-TO-XMl
+
+
+-->There are three main stages of LINQ Query Execution
+1)Initialization--> form data in datasource
+2)Condition --> wheer data_filter_condition
+3) Selection --> select data
+
+#LAMDA Expression
+--> Lambda expression is a function without name. It keeps syntax clear and short. It consists of two parts:- 1)Input 2)Expression
+
+#IEnumerable 
+1) IEnumerbale is an interface. It is availabe in System.Collection namespace.
+2) A collection of IEnumerable type can be iterated. like loop , for loop, foreach, while etc
+3) This interface has a method called GetEnumerator
+4) GetEnumerator return an IEnumerator which iterates through collection.
+
+
